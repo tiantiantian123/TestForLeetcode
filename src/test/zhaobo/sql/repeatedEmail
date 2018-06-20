@@ -1,0 +1,2 @@
+SELECT DISTINCT Email
+FROM Person AS p WHERE (SELECT COUNT(*) FROM Person WHERE Email = p.Email)>1;
